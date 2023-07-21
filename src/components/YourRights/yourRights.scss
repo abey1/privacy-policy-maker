@@ -1,0 +1,31 @@
+.main_container {
+  font-size: 20px;
+  ul {
+    li {
+      .main_bulletin {
+        font-weight: bold;
+      }
+    }
+  }
+  .sub_title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .sub_title_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .sub-title-icon {
+      margin-right: 20px;
+      font-size: 25px;
+    }
+    .sub_title {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.card_container {
+  margin: 0 50px;
+  margin-bottom: 10px;
+  background: #eee;
+  box-shadow: 0 8px 8px -4px lightblue;
+  width: 80vw;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+
+    .icon {
+      font-size: 50px;
+
+      &:hover {
+        cursor: pointer;
+      }
+      .rotate_right {
+        transform: rotate(180deg);
+        transition: transform 1s ease-in-out;
+      }
+      .rotate_left {
+        transform: rotate(-90deg);
+        transition: transform 1s ease-in-out;
+      }
+    }
+  }
+  .content_holder {
+    padding: 0 50px;
+  }
+  .content_collapse {
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+  }
+  .content_expand {
+    height: auto;
+    max-height: 4000px;
+    transition: max-height 1s ease-in-out;
+  }
+}
